@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.teavscoffee.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_quezFragment"
+            app:destination="@id/quezFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quezFragment"
+        android:name="com.example.teavscoffee.QuezFragment"
+        android:label="fragment_quez"
+        tools:layout="@layout/fragment_quez" >
+        <action
+            android:id="@+id/action_quezFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@id/introFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.teavscoffee.FinishFragment"
+        android:label="FinishFragment" >
+        <argument
+            android:name="result"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/eboutFragment"
+        android:name="com.example.teavscoffee.EboutFragment"
+        android:label="EboutFragment" />
+</navigation>

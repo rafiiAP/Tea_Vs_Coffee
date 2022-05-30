@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#654325"
+        tools:context=".QuezFragment">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="157dp"
+            android:layout_height="191dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/coffee_cup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/quizText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:text="Lebih suka kopi atau teh saat sedang santai?"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/teh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:backgroundTint="#FDFCFC"
+            android:padding="50dp"
+            android:text="TEH"
+            android:textColor="#654325"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/quizText" />
+
+        <Button
+            android:id="@+id/kopi_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FDFCFC"
+            android:padding="50dp"
+            android:text="KOPI"
+            android:textColor="#654325"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/quizText"
+            app:layout_constraintTop_toTopOf="@+id/teh_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

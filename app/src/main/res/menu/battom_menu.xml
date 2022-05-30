@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:title="Tentang"
+            android:id="@+id/eboutFragment"
+            android:icon="@drawable/coffee"/>
+        <item android:title="intro"
+            android:id="@+id/introFragment"
+            android:icon="@drawable/menu"/>
+        <item android:title="kuis"
+            android:id="@+id/quezFragment"
+            android:icon="@drawable/reward"/>
+</menu>
